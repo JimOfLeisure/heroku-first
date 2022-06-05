@@ -1,8 +1,11 @@
 const { response } = require('express');
 const express = require('express');
+const cors = reqire('cors');
 
 const app = express();
 const PORT = process.env.PORT || 8000;
+
+app.use(cors());
 
 const rappers = {
     '21 savage': {
